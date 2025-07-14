@@ -8,6 +8,7 @@ import CakeUI from '../../assets/cake.JPG';
 import Pophub from '../../assets/Pophub.JPG';
 import Parkify from '../../assets/parkify.JPG'
 import InfiniousAuto from '../../assets/infinious.JPG'
+import scentsation from '../../assets/scentsation.JPG'
 
 const webProjects = [
    {
@@ -17,9 +18,9 @@ const webProjects = [
     techstack: 'React, Node.js, MongoDB',
   },
   {
-    title: 'PoPhub',
-    img: Pophub,
-    link: 'https://tourmaline-banoffee-1204f1.netlify.app/',
+    title: 'ScentSation',
+    img: scentsation,
+    link: 'https://drive.google.com/drive/folders/11rVnsH_MolTS1_5SdMUh6zldlqNuDPPJ?usp=drive_link',
   },
     {
     title: 'Infinious Automation',
