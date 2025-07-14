@@ -1,0 +1,94 @@
+#contact {
+  background-color: #0f0f0f;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.contactus h2 {
+  font-size: 2.8rem;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.contactus p {
+  color: #ccc;
+  margin-bottom: 3rem;
+  font-size: 1rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 188, 212, 0.1);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 188, 212, 0.2);
+}
+
+.contact-icon {
+  font-size: 2.5rem;
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.contact-card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.contact-card a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+  color: #00bcd4;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 90%;
+  }
+
+  .contactus h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactus h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-icon {
+    font-size: 2rem;
+  }
+}

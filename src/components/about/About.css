@@ -1,0 +1,150 @@
+.about {
+  padding: 4rem 2rem 6rem 2rem;
+  background-color: #0f0f0f;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.about__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #00bcd4;
+  margin-top: 30px;
+}
+
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about__image-wrapper {
+  flex: 1 1 300px;
+  max-width: 350px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #00bcd4, transparent);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__image {
+  width: 100%;
+  border-radius: 2rem;
+  transform: rotate(8deg);
+  transition: 0.4s ease;
+}
+
+.about__image:hover {
+  transform: rotate(0);
+}
+
+.about__content {
+  flex: 1 1 500px;
+}
+
+.about__cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.about__card {
+  background: #1c1c1c;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  flex: 1 1 150px;
+  border: 1px solid transparent;
+  transition: 0.3s ease;
+}
+
+.about__card:hover {
+  border-color: #00bcd4;
+  transform: translateY(-5px);
+}
+
+.about__icon {
+  font-size: 1.8rem;
+  color: #00bcd4;
+  margin-bottom: 0.5rem;
+}
+
+.about__card h5 {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+  color: #ffffff;
+}
+
+.about__card small {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+}
+
+.about__text {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn-primary {
+  background-color: #00bcd4 !important;
+  color: #000000;
+  padding: 0.7rem 1.8rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__image-wrapper {
+    max-width: 250px;
+    margin-bottom: 2rem;
+  }
+
+  .about__cards {
+    justify-content: center;
+  }
+
+  .about__card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__heading {
+    font-size: 2rem;
+  }
+
+  .about__text {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    max-width: 280px;
+  }
+}
