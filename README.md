@@ -21,4 +21,4 @@ Welcome to my personal portfolio! This site showcases the work I've done as a We
 Let’s connect!  
 📧 Email: yourname@example.com  
 🌐 Portfolio: [your-portfolio-link.com](https://your-portfolio-link.com)  
-📱 LinkedIn: [linkedin.com/in/nazalhumayun](www.linkedin.com/in/nazal-malik-a7a95a23b)
+LinkedIn: [linkedin.com/in/nazal-malik-a7a95a23b](https://www.linkedin.com/in/nazal-malik-a7a95a23b)
