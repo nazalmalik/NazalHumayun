@@ -92,18 +92,25 @@
   transform: translateY(-3px);
 }
 
-//* Right Side Image with Glow */
 .header__image-glow {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(0, 188, 212, 0.3) 0%, transparent 60%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__image-glow::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(0, 188, 212, 0.3);
   animation: pulse 3s infinite;
-  position: relative;
+  z-index: 0;
 }
 
 .header__image {
@@ -112,7 +119,8 @@
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #fff;
-  z-index: 2;
+  position: relative;
+  z-index: 1; /* Keep image above pulse glow */
 }
 
 .header__image img {
@@ -122,18 +130,22 @@
   border-radius: 50%;
 }
 
-/* Corrected Circular Pulse Animation */
+/* Real Circular Pulse Animation */
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(0, 188, 212, 0.4);
+    transform: scale(1);
+    opacity: 0.6;
   }
   70% {
-    box-shadow: 0 0 0 30px rgba(0, 188, 212, 0);
+    transform: scale(1.5);
+    opacity: 0;
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(0, 188, 212, 0);
+    transform: scale(1);
+    opacity: 0;
   }
 }
+
 
 /* Tablet View */
 @media (max-width: 992px) {
