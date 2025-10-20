@@ -6,12 +6,15 @@ import skinSerumImg from '../../assets/Skin.JPG';
 import Furniture from '../../assets/de2.JPG';
 import CakeUI from '../../assets/cake.JPG';
 import Pophub from '../../assets/Pophub.JPG';
-import Parkify from '../../assets/parkify.JPG'
-import InfiniousAuto from '../../assets/infinious.JPG'
-import scentsation from '../../assets/scentsation.JPG'
+import Parkify from '../../assets/parkify.JPG';
+import InfiniousAuto from '../../assets/infinious.JPG';
+import scentsation from '../../assets/scentsation.JPG';
+import sqa1 from '../../assets/sqa1.JPG';
+import sqa2 from '../../assets/sqa2.JPG';
+
 
 const webProjects = [
-   {
+  {
     title: 'Parkify',
     img: Parkify,
     link: 'https://parkify-frontend-rouge.vercel.app/',
@@ -22,7 +25,7 @@ const webProjects = [
     img: scentsation,
     link: 'https://drive.google.com/drive/folders/11rVnsH_MolTS1_5SdMUh6zldlqNuDPPJ?usp=drive_link',
   },
-    {
+  {
     title: 'Infinious Automation',
     img: InfiniousAuto,
     link: 'https://infinious.pk/',
@@ -31,7 +34,7 @@ const webProjects = [
     title: 'PopHub',
     img: Pophub,
     link: 'https://tourmaline-banoffee-1204f1.netlify.app/',
-  }
+  },
 ];
 
 const uiuxProjects = [
@@ -49,8 +52,23 @@ const uiuxProjects = [
     title: 'Pie and Cake UI Animation',
     img: CakeUI,
     link: 'https://www.figma.com/proto/M18P7AE3FPuC4coPpJWIjG/cake-deisgn?node-id=7-30&t=UD3TW3FJQ9NbUQMI-1',
-  }
-  
+  },
+];
+
+// ✅ New SQA Projects Section
+const sqaProjects = [
+  {
+    title: 'Parkify – Smart Parking App',
+    description: 'Test cases for booking, payments, and navigation modules.',
+    img: sqa1,
+    link: 'https://docs.google.com/spreadsheets/d/1nnmvpDMn-sLqAYLxEiDVzkriXhAM7HeBVEftTlKCzko/edit?usp=sharing',
+  },
+  {
+    title: 'E-Commerce Website',
+    description: 'Test cases for checkout flow.',
+    img: sqa2,
+    link: 'https://docs.google.com/spreadsheets/d/1XxQPKkyP5rSUsfMxUxsulrurohtBa9EtP-Fc21qbDQY/edit?usp=sharing',
+  },
 ];
 
 const Portfolio = () => {
@@ -69,10 +87,14 @@ const Portfolio = () => {
               </div>
               <div className="portfolio-content">
                 <h4>{proj.title}</h4>
-                <a href={proj.link} target="_blank" rel="noopener noreferrer" className="portfolio-btn">
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-btn"
+                >
                   View Project
                 </a>
-                
               </div>
             </div>
           ))}
@@ -81,7 +103,7 @@ const Portfolio = () => {
 
       {/* UI/UX Design Projects */}
       <div className="portfolio-category">
-        <h3 className="portfolio-subheading">UI/UX Design</h3>
+        <h3 className="portfolio-subheading">UI Design</h3>
         <div className="portfolio-grid">
           {uiuxProjects.map((proj, index) => (
             <div className="portfolio-card" key={index}>
@@ -90,8 +112,39 @@ const Portfolio = () => {
               </div>
               <div className="portfolio-content">
                 <h4>{proj.title}</h4>
-                <a href={proj.link} target="_blank" rel="noopener noreferrer" className="portfolio-btn">
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-btn"
+                >
                   View Design
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Software Quality Assurance Projects */}
+      <div className="portfolio-category">
+        <h3 className="portfolio-subheading">Test Cases</h3>
+        <div className="portfolio-grid">
+          {sqaProjects.map((proj, index) => (
+            <div className="portfolio-card" key={index}>
+              <div className="portfolio-img-wrapper">
+                <img src={proj.img} alt={proj.title} className="portfolio-img" />
+              </div>
+              <div className="portfolio-content">
+                <h4>{proj.title}</h4>
+                <p>{proj.description}</p>
+                <a
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="portfolio-btn"
+                >
+                  View Test Cases
                 </a>
               </div>
             </div>

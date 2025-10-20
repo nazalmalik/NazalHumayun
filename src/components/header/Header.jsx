@@ -16,7 +16,7 @@ const Header = () => {
           <h4 className="typewriter">
             <Typewriter
               options={{
-                strings: ['Software Engineer', 'Frontend Developer'],
+                strings: ['Software Engineer', 'Hobbies: Reading , Baking , Exploring New Things'],
                 autoStart: true,
                 loop: true,
                 pauseFor: 2000,

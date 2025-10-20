@@ -8,7 +8,7 @@ function Navcomp() {
     <Navbar expand="lg" className="custom-navbar fixed-top">
       <Container>
         <Navbar.Brand href="#home" className="navbarbrand">
-          dev.nazaL
+          Eng.NazaL
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="navbar-menu"
