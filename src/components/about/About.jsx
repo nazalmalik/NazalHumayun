@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
-import { FaGraduationCap, FaCertificate, FaCode } from "react-icons/fa";
+import { FaGraduationCap, FaCertificate } from "react-icons/fa";
 import agileCert from "../../assets/Introduction to Agile Development and Scrum.JPG";
 import webcert from "../../assets/Web Development.jpeg";
 import designcert from "../../assets/Fudamentals of Graphic Design.JPG";
