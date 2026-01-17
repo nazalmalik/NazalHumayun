@@ -11,9 +11,14 @@ import InfiniousAuto from '../../assets/infinious.JPG';
 import scentsation from '../../assets/scentsation.JPG';
 import sqa1 from '../../assets/sqa1.JPG';
 import sqa2 from '../../assets/sqa2.JPG';
-
+import tgtrek from '../../assets/tgtrek.JPG';
 
 const webProjects = [
+   {
+    title: 'TG Trek and Tour',
+    img: tgtrek,
+    link: 'https://tgtrekandtours.com/',
+  },
   {
     title: 'Parkify',
     img: Parkify,
@@ -35,6 +40,7 @@ const webProjects = [
     img: Pophub,
     link: 'https://tourmaline-banoffee-1204f1.netlify.app/',
   },
+ 
 ];
 
 const uiuxProjects = [
