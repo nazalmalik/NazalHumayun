@@ -1,0 +1,45 @@
+import React from 'react';
+import './Header.css';
+import CTA from './CTA';
+import mine from '../../assets/mine.png';
+import Socials from './Socials';
+import Typewriter from 'typewriter-effect';
+
+const Header = () => {
+  return (
+    <section id="home" className="header">
+      <div className="container header__container">
+        <div className="header__content">
+          <h5>Hello, I'm</h5>
+          <h1>Nazal Humayun</h1>
+
+          <h4 className="typewriter">
+            <Typewriter
+              options={{
+                strings: ['Software Engineer', 'Hobbies: Reading , Baking , Exploring New Things'],
+                autoStart: true,
+                loop: true,
+                pauseFor: 2000,
+              }}
+            />
+          </h4>
+
+          <CTA />
+
+          {/* Social icons moved below CTA */}
+          <div className="socialicons">
+            <Socials />
+          </div>
+        </div>
+
+        <div className="header__image-glow">
+          <div className="header__image">
+            <img src={mine} alt="Nazal Humayun" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Header;
