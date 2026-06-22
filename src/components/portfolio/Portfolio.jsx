@@ -13,8 +13,34 @@ import sqa1 from '../../assets/sqa1.JPG';
 import sqa2 from '../../assets/sqa2.JPG';
 import tgtrek from '../../assets/tgtrek.JPG';
 import odpm from "../../assets/odpm.JPG";
+import engro from "../../assets/engro.png";
+import cocacola from "../../assets/cocacola.png"
+import pgc from "../../assets/pgc.png";
+import warehouse from "../../assets/warehouse.png";
+import eldracare from "../../assets/eldracare.png";
 
 const webProjects = [
+  {
+    title: 'ChillCola ',
+    img: cocacola,
+    link: 'https://chillcola.vercel.app/',
+  },
+    {
+    title: 'Airpro',
+    img: pgc,
+    link: 'https://olivetshub.github.io/Airpro-colleges/',
+  },
+   {
+    title: 'Strategic Warehouse Monitoring',
+    img: warehouse,
+    link: 'https://olivetshub.github.io/StratEgic-Warehouse-EWR-/',
+  },
+  {
+    title: 'Engro SmartWell Dashboard ',
+    img: engro,
+    link: 'https://olivetshub.github.io/engro-dashboard/',
+  },
+ 
   {
     title: 'Octopus Design and Project Management',
     img: odpm,
@@ -49,7 +75,11 @@ const webProjects = [
 ];
 
 const uiuxProjects = [
-  {
+    {
+    title: 'Eldracare',
+    img: eldracare,
+    link: 'https://www.figma.com/proto/fpOdwVBhVE2fPyCqE7Xtd4/EldraSense?node-id=10-15&p=f&t=15xr0oGG11xxAa4I-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
+  },{
     title: 'Skin Serum Landing Page',
     img: skinSerumImg,
     link: 'https://www.figma.com/proto/xIucDBFPWprHBiCE8YvHBi/Product-Website?node-id=1-2&p=f&t=75ttyMcgLWDITK4l-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1',
