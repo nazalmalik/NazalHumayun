@@ -18,8 +18,19 @@ import cocacola from "../../assets/cocacola.png"
 import pgc from "../../assets/pgc.png";
 import warehouse from "../../assets/warehouse.png";
 import eldracare from "../../assets/eldracare.png";
+import fazeelatimg from "../../assets/fazeelatimg.png;
+import primesalt from "../../assets/primesalt.png;
 
 const webProjects = [
+    {
+    title: 'Fazeelat Begum Falah-e-Insaniyat ',
+    img: fazeelatimg,
+    link: 'https://fazeelatbegumfalaheinsaniyat.com/',
+  },{
+    title: 'Prime Salt ',
+    img: primesalt,
+    link: 'https://primehimalayansalt.com/',
+  },
   {
     title: 'ChillCola ',
     img: cocacola,
