@@ -26,7 +26,8 @@ const webProjects = [
     title: 'Fazeelat Begum Falah-e-Insaniyat ',
     img: fazeelatimg,
     link: 'https://fazeelatbegumfalaheinsaniyat.com/',
-  },{
+  },
+    {
     title: 'Prime Salt ',
     img: primesalt,
     link: 'https://primehimalayansalt.com/',
