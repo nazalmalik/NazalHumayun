@@ -18,8 +18,9 @@ import cocacola from "../../assets/cocacola.png"
 import pgc from "../../assets/pgc.png";
 import warehouse from "../../assets/warehouse.png";
 import eldracare from "../../assets/eldracare.png";
-import fazeelatimg from "../../assets/fazeelatimg.png;
 import primesalt from "../../assets/primesalt.png;
+import fazeelatimg from "../../assets/fazeelatimg.png;
+
 
 const webProjects = [
     {
